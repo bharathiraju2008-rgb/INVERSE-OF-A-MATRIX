@@ -12,20 +12,14 @@ To write a python program to find the inverse of a matrix
 
 ## Program:
 ~~
-
 import os
 os.environ["OPENBLAS_NUM_THREADS"]="1"
 import numpy as np
-
-# Define the matrix from the image
-# Rows: [1, 1, 2], [-1, 1, 1], [2, 1, 1]
 A = np.array([
     [2, 1, 1],
     [1, 1, 1],
     [1, -1, 2]
 ])
-
-# Calculate the inverse
 try:
     inverse_A = np.linalg.inv(A)
     
